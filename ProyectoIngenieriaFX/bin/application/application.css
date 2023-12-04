@@ -1,0 +1,10 @@
+
+
+/* Definir estilos para la clase .mi-estilo */
+.label_text {
+    background-color: trasparent;
+    border-color: #01A9DB; /* Tamaño de la fuente */
+    border-width: 0px 0px 2px 0px; /* Peso de la fuente */
+    /* Otros estilos que desees agregar */
+}
+
