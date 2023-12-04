@@ -5,10 +5,9 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar layoutY="-1.0" prefHeight="28.0" prefWidth="600.0" styleClass="MenuBar" stylesheets="@../application/application.css">
+      <MenuBar layoutY="-1.0" prefHeight="28.0" prefWidth="600.0" styleClass="MenuBar" stylesheets="@application.css">
         <menus>
           <Menu mnemonicParsing="false" text="Gestion de Usuarios">
             <items>
