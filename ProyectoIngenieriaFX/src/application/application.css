@@ -1,9 +1,17 @@
 
-
-/* Definir estilos para la clase .mi-estilo */
 .MenuBar {
     -fx-background-color: #01A9DB;
     -fx-color: #ffffff;
-    /* Otros estilos que desees agregar */
+   
+}
+
+.botonAzul {
+    -fx-background-color: #01A9DB;
+    -fx-color: #ffffff;  
+}
+.fieldAzul {
+    -fx-background-color:  transparent;
+    -fx-border-color: #01A9DB;  
+    -fx-border-width: 0px 0px 2px 0px;
 }
 

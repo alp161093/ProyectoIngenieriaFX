@@ -32,7 +32,7 @@ public class MainController{
 		
 		String usuarioText = textUsuario.getText();
 		String contrasenaText = textContrasena.getText();
-        Usuario user = ComprobarUsuario(usuarioText);
+        Usuario user = ComprobarUsuario(usuarioText, contrasenaText);
         
         if(user == null) {
         	//se queda como esta y sacamos popUp informando
@@ -44,7 +44,7 @@ public class MainController{
         	//Usuario admin de la app
         	CerrarVentanaAnterior(event); 
         	Stage MenuPrincipalAdmin = new Stage();
-    		MenuPrincipalAdmin mp = new MenuPrincipalAdmin(); 
+        	MenuPrincipalAdmin mp = new MenuPrincipalAdmin(); 
     		mp.start(MenuPrincipalAdmin);
         }
         else {

@@ -1,26 +1,25 @@
 package application;
-	
+
 import Controllers.MainController;
+import Controllers.ProyectosController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
-
-public class MenuPrincipal extends Application {
-	@Override
+public class ProyectoWindow extends Application{
 	public void start(Stage primaryStage) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPrincipal.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("Proyectos.fxml"));
 	        Parent root = loader.load();
 	        // Obtener el controlador
-	        MainController controller = loader.getController();
+	        ProyectosController controller = loader.getController();
+	        controller.initialize(null, null);
 			Scene scene = new Scene(root);
 			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setTitle("Menú Principal");
+			primaryStage.setTitle("Menu Principal/Proyectos");
 			primaryStage.setScene(scene);
 			Image icon = new Image(getClass().getResourceAsStream("logo-transparent.png"));
 			primaryStage.getIcons().add(icon);
@@ -29,6 +28,4 @@ public class MenuPrincipal extends Application {
 			e.printStackTrace();
 		}
 	}
-	
-	
 }
